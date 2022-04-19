@@ -1,0 +1,89 @@
+html, body {
+  height: 100vh;
+  background-color: #334155;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 60px;
+}
+
+/* upvote style */
+.upvote {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  font-size: 0;
+}
+.upvote:hover {
+  cursor: pointer;
+}
+.upvote svg {
+  width: 2rem;
+  height: 2rem;
+}
+.upvote.no-selected {
+  background-color: #F4F6F8;
+}
+.upvote.selected {
+  background-color: #E5E8FD;
+}
+.upvote.no-selected svg {
+  fill: #343A40;
+}
+.upvote.selected svg {
+  fill: #253CF2;
+}
+
+/* group style */
+.upvote-group {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid #e2e8f0;
+  border-radius: 1rem;
+  flex: 1;
+  min-height: 4rem;
+  padding: 0.5rem;
+}
+
+.upvote-wrapper {
+  margin: 0.5rem;
+}
+
+/* button style */
+button.add-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F6F8;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  border: none;
+  box-shadow:  3px 3px 0 0 #000000;
+  cursor: pointer;
+}
+button.add-new:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+button.add-new svg{
+  width: 2rem;
+  height: 2rem;
+}
+
+/* wireframe example */
+.wireframe-card {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+}
